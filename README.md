@@ -41,4 +41,4 @@ The weights as the training results will be saved in ``logs/DATE-TIME/``, where 
 ## Predicting
 Predicting and Evaluating tools is available in ``eval/``. Files start with ``evaluate`` is the main program for each model, while others are utils. You can choose only to predict or evaluate in these ``evaluate_***.py``. The Results will be saved in the main content, namely ``test_results/``. Total ``PSNR``, ``SSIM``, ``Precision``, and ``Recall`` of the model to be evaluated will be available in ``test_results/results_***.txt``. The details is saved in other files in ``test_results/``
 
-The tools we fit datasets of Double-and-Triple-MNIST, Fashion-MNIST and our Testset-80 to our programs are partially integrated into ``DouTriMnist/``, ``fashion0909/``+``Fashion0909_test/``, and ``expdata_ft`` respectively. Contact us with appropriate requests if you need more details.
+The tools we fit datasets of Double-and-Triple-MNIST, Fashion-MNIST and our Testset-80 to our programs are partially integrated into ``DouTriMnist/``, ``Fashion_MNIST_train/``+``Fashion_MNIST_test/``, and ``expdata_ft`` respectively. Contact us with appropriate requests if you need more details.

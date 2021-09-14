@@ -1,7 +1,7 @@
 import numpy as np
 import cv2, os, random
 
-def TestDataSet(filepath='fashion0909/fig'):
+def TestDataSet(filepath='Fashion_MNIST_train/fig'):
     filenames = os.listdir(filepath)
 
     imagenames = []

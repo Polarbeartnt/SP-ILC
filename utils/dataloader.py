@@ -27,11 +27,11 @@ class GenerateInput(object):
             elif dataset == 'russian':
                 self.serieset = np.load('data180k/russet.npy')[indexs,:series_length]
             elif dataset == 'fashion':
-                self.imageset = np.reshape(np.load('fashion0909/fashionset.npy')[indexs], [len(indexs),64,64])
+                self.imageset = np.reshape(np.load('Fashion_MNIST_train/fashionset.npy')[indexs], [len(indexs),64,64])
                 self.serieset = self.imageset
             elif dataset == 'fashion_rd':
-                self.imageset = np.reshape(np.load('fashion0909/fashionset.npy')[indexs], [len(indexs),64,64])
-                self.serieset = np.load('fashion0909/fashionrdset.npy')[indexs,:series_length]
+                self.imageset = np.reshape(np.load('Fashion_MNIST_train/fashionset.npy')[indexs], [len(indexs),64,64])
+                self.serieset = np.load('Fashion_MNIST_train/fashionrdset.npy')[indexs,:series_length]
             else:
                 self.serieset = np.load('data180k/%s.npy'%(dataset))[indexs,:series_length]
             self.serieset = np.array([(x - x.min())/(x.max()-x.min()) for x in self.serieset])

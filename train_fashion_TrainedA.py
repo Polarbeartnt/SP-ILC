@@ -267,7 +267,7 @@ if __name__ == "__main__":
         (1e-2,28,True)
     ]
     Batch_size = 200
-    rootpath = 'fashion0909'
+    rootpath = 'Fashion_MNIST_train'
     dataset = 'fash'
     
     Epoch = 0

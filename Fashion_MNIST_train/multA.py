@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-with open('Fashion0909_test/test_fash.txt', 'r') as f:
+with open('Fashion_MNIST_train/train_fash.txt', 'r') as f:
     filelist = f.readlines()
 
 A = np.loadtxt('A_8192.txt')
@@ -17,3 +17,6 @@ for ord, name in enumerate(filelist):
     totseries.append(s)
     np.savetxt(name.replace('fig', 'txt').replace('png', 'txt'), s)
     print('Done %s / %s.'%(ord,tot))
+
+totseries = np.array(totseries)
+np.save('Fashion_MNIST_train/randomfash.npy', totseries)

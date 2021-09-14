@@ -1,6 +1,6 @@
 import numpy as np
 
-with open('fashion0909/train_fash.txt','r') as f:
+with open('Fashion_MNIST_train/train_fash.txt','r') as f:
     lines = f.readlines()
 names = [line.split()[0].replace('fig', 'txt').replace('.png', '.txt') for line in lines]
 s = []
@@ -9,5 +9,5 @@ for i,line in enumerate(names):
     arrau = np.loadtxt(line)
     s.append(arrau)
 s = np.array(s)
-np.save('fashion0909/fashionrdset.npy', s)
+np.save('Fashion_MNIST_train/fashionrdset.npy', s)
 print(len(s))

@@ -39,7 +39,7 @@ for path in Path:
     mkdir('test_results', path)
     f = open('test_results/results_%s.txt'%(path), 'a+')
     f.write(predictor.model_path+'\n')
-    with open('Fashion0909_test/test_%s.txt'%(path), 'r') as g:
+    with open('Fashion_MNIST_test/test_%s.txt'%(path), 'r') as g:
         exfile = [tmp.split(' ')[0] for tmp in g.readlines()]
     if PREDICT:
         predictor.get_detect_results(exfile,path)

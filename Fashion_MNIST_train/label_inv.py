@@ -1,6 +1,6 @@
 import os
 
-root = 'fashion0909/label_inv'
+root = 'Fashion_MNIST_train/label_inv'
 filelist = os.listdir(root)
 
 for name in filelist:

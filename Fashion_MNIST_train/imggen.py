@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 from numpy.lib.type_check import imag
 
-with open('fashion0909/train_fash.txt','r') as f:
+with open('Fashion_MNIST_train/train_fash.txt','r') as f:
     lines = f.readlines()
 names = [line.split()[0].replace('.txt', '.png').replace('label', 'fig') for line in lines]
 images = []
@@ -13,5 +13,5 @@ for i,line in enumerate(names):
     image = np.reshape(image, [4096])
     images.append(image)
 images = np.array(images)
-np.save('fashion0909/fashionset.npy', images)
+np.save('Fashion_MNIST_train/fashionset.npy', images)
 print(len(images))

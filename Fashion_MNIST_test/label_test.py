@@ -10,7 +10,7 @@ def check(l):
     y2 = str(int((l[0]+l[3]//2)*512/64))
     return ' '.join([x1,y1,x2,y2,classs])
 
-root = 'Fashion0909_test/'
+root = 'Fashion_MNIST_test/'
 files = [root+'label/'+name for name in os.listdir(root+'label')]
 
 for name in files:
