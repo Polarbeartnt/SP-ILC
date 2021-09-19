@@ -2,7 +2,7 @@
 ## Introduction
 Concurrent Single-Pixel Imaging, Object Location and Classification By Deep Learning.
 
-Paper: **(link)**
+Paper: https://doi.org/10.3390/photonics8090400
 
 We refered to yolov4-tiny implemented in Pytorch when writing the neural network, see https://github.com/bubbliiiing/yolov4-tiny-pytorch. 
 
